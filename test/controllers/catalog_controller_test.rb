@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class CatalogControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get comment" do
+    get :comment
+    assert_response :success
+  end
+
 end
